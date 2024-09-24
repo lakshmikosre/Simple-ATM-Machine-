@@ -58,7 +58,7 @@ class ATM
 			depositMoney();
 		}
 		else if(opt==4) {
-//			Bye();
+			Bye();
 			return;
         
 		}
