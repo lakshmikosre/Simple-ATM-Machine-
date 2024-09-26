@@ -33,7 +33,7 @@ class ATM
 			menu();
 		
 		}
-		sc.close();
+		
 	}
 	
 	@SuppressWarnings("resource")
@@ -41,9 +41,9 @@ class ATM
 	{
 		System.out.println("Enter your choice: ");
 		System.out.println("1. Check A/C Balance");
-		System.out.println("2.  Withdraw money");
+		System.out.println("2. Withdraw money");
 		System.out.println("3. Deposit Money");
-		System.out.println("4 . EXIT");
+		System.out.println("4 .EXIT");
 		
 		Scanner sc = new Scanner(System.in);
 		int opt = sc.nextInt();
@@ -65,7 +65,7 @@ class ATM
 		else {
 			System.out.println("Enter a valid choice");
 		}
-		sc.close();
+	
 	}
 	public void checkBalance()
 	{
@@ -77,7 +77,7 @@ class ATM
 		System.out.println("Enter amount to Withdraw:  ");
 		Scanner sc = new Scanner(System.in);
 		float amount = sc.nextFloat();
-		sc.close();
+	
 		if(amount>Balance)
 		{
 			System.out.println("Insufficient Balance");
